@@ -1,54 +1,16 @@
-'''
-*****************************************************************************************
-*
-*        		===============================================
-*           		GeoGuide(GG) Theme (eYRC 2023-24)
-*        		===============================================
-*
-*  This script is to implement Task 1A of GeoGuide(GG) Theme (eYRC 2023-24).
-*  
-*  This software is made available on an "AS IS WHERE IS BASIS".
-*  Licensee/end user indemnifies and will keep e-Yantra indemnified from
-*  any and all claim(s) that emanate from the use of the Software or 
-*  breach of the terms of this agreement.
-*
-*****************************************************************************************
-'''
 
-# Team ID:			[ GG_1417 ]
-# Author List:		[ Names of team members worked on this file separated by Comma: Anuj Verma, Sujal Ghadge, Pratik Magdum,Aman Patvegar ]
-# Filename:			task_1a.py
-# Functions:	    [`ideantify_features_and_targets`, `load_as_tensors`,
-# 					 `model_loss_function`, `model_optimizer`, `model_number_of_epochs`, `training_function`,
-# 		
-####################### IMPORT MODULES #######################
 import pandas as pd
 import torch
 import numpy as np
 import torch.nn as nn
 import torch.optim as optim
-###################### Additional Imports ####################
-'''
-You can import any additional modules that you require from 
-torch, matplotlib or sklearn. 
-You are NOT allowed to import any other libraries. It will 
-cause errors while running the executable
-'''
 from sklearn.preprocessing import LabelEncoder
 from torch.utils.data import TensorDataset, DataLoader
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.preprocessing import OneHotEncoder
 
 
-##############################################################
 
-################# ADD UTILITY FUNCTIONS HERE #################
-
-
-
-
-
-##############################################################
 
 
 def data_preprocessing(task_1a_dataframe):
@@ -424,9 +386,7 @@ HIDDEN_LAYER1 = 128  # Number of neurons in the first hidden layer
 HIDDEN_LAYER2 = 128  # Number of neurons in the second hidden layer
 HIDDEN_LAYER3 = 128  # Number of neurons in the third hidden layer
 OUTPUT_CLASSES = 1 
-########################################################################
-########################################################################
-######### YOU ARE NOT ALLOWED TO MAKE CHANGES TO THIS FUNCTION #########	
+	
 '''
 	Purpose:
 	---
